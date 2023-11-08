@@ -85,10 +85,10 @@ npm run server
 注册 Vercel 账号并绑定 Github，在 Vercel 导入 该项目，Vercel 会自动识别出该 Hexo 项目，不需要改动，直接选择 Deploy 部署。部署完成会有一个 Vercel 临时域名，你也可以绑定自己的域名。
 
 
-![Untitled.png](./source/images/70ab4da0691a94efd97d5ae401a8d140.png)
+![Untitled.png](https://image.1874.cool/1874/202311082348509.png)
 
 
-![Untitled.png](./source/images/96c63eba75b1b9b8e040ce9cc955f867.png)
+![Untitled.png](https://image.1874.cool/1874/202311082348344.png)
 
 
 ## 10. 配置 Github Actions 权限
@@ -97,7 +97,7 @@ npm run server
 在 Github 仓库的设置中找到 `Actions-General`，打开流水线写入权限`Workflow permissions`
 
 
-![Untitled.png](./source/images/47e1175ed8622c31bc9f70b7598c50b5.png)
+![Untitled.png](https://image.1874.cool/1874/202311082349660.png)
 
 
 ## 11. 配置环境变量
@@ -109,7 +109,7 @@ npm run server
 在 Github 仓库的设置中找到 `Secrets  and variables`，新增仓库的环境变量`NOTION_DATABASE_ID`和`NOTION_TOKEN`和`.elog.env`保持一致即可
 
 
-![Untitled.png](./source/images/e7a2a8aed67b2bb6ae47857733221907.png)
+![Untitled.png](https://image.1874.cool/1874/202311082348909.png)
 
 
 ## 12. 自动化部署
