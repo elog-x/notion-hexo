@@ -5,6 +5,7 @@
 - 写作平台：Notion
 - 博客平台：[Hexo](https://hexo.io/)
 - 博客主题：[Aurora](https://aurora.tridiamond.tech/cn/)
+- 博客文档同步：[Elog](https://github.com/LetTTGACO/elog)
 - 部署平台：Vercel
 
 # 博客搭建指南
