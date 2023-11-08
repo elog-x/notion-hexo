@@ -1,0 +1,56 @@
+name: Sync Docs
+
+on:
+  # 允许手动push触发
+#  push:
+#    branches:
+#      - master
+  # 允许外部仓库事件触发
+  repository_dispatch:
+    types:
+      - deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@master
+
+      - name: 安装node环境
+        uses: actions/setup-node@master
+        with:
+          node-version: "16.x"
+
+      - name: 安装依赖
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install --prod
+
+      - name: 拉取文档
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          npm run sync
+
+      - name: 配置Git用户名邮箱
+        run: |
+          git config --global user.name "xxx"
+          git config --global user.email "xxx"
+
+      - name: 提交拉取的文档到GitHub仓库
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
+          git add .
+          git commit -m "Refresh elog.cache.json" -a
+
+      - name: 推送文档到仓库
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成静态文件
+        run: |
+          npm run build

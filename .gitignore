@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+.idea
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+.elog.env
