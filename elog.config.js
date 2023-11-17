@@ -27,9 +27,7 @@ module.exports = {
     platform: 'local',
     local: {
       outputDir: './source/images',
-      prefixKey: '/images',
-      pathFollowDoc: false,
-      imagePathExt: '',
+      prefixKey: '/images'
     }
   },
 }
