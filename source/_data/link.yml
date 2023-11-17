@@ -1,0 +1,34 @@
+- class_name: 友情链接
+  class_desc: 那些人，那些事
+  link_list:
+    - name: '1874'
+      link: https://1874.cool/
+      avatar: https://1874.cool/favicon.ico
+      descr: 有粤语歌就不会有世界末日
+
+    - name: Elog
+      link: https://elog.1874.cool/
+      avatar: https://elog.1874.cool/favicon.ico
+      descr: 开放式跨平台博客解决方法
+
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的博客框架
+
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: A Simple and Card UI Design theme for Hexo
+
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 视频网站
+    - name: X
+      link: https://x.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台
