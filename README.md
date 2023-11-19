@@ -7,7 +7,6 @@
 - 博客主题：[Butterfly@4.10.0](https://github.com/jerryc127/hexo-theme-butterfly)
 - 博客文档同步：[Elog](https://github.com/LetTTGACO/elog)
 - 部署平台：Vercel
-- 博客仓库：[https://github.com/LetTTGACO/notion-hexo](https://github.com/LetTTGACO/notion-hexo)
 
 # 博客搭建指南
 
@@ -152,11 +151,12 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=d
 如果想自定义 Elog 配置，可访问 [Elog 文档](https://elog.1874.cool/)
 
 
-# 博客示例
+# 示例
 
 
 示例仓库：[https://github.com/LetTTGACO/notion-hexo](https://github.com/LetTTGACO/notion-hexo)
 
+Notion数据库模版：[elog-hexo-template](https://1874.notion.site/867486af567f4a8897427b15ffd10b3c?v=a25aec8e27d5415e8605e43034f822bd&pvs=4)
 
 博客示例地址：[https://notion-hexo.vercel.app](https://notion-hexo.vercel.app/)
 
