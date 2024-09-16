@@ -1,5 +1,6 @@
 
 const { matterMarkdownAdapter } = require('@elog/cli')
+const elogConfig = require('./elog.config')
 
 /**
  * 自定义文档处理器
@@ -8,6 +9,15 @@ const { matterMarkdownAdapter } = require('@elog/cli')
  * @return {Promise<DocDetail>} 返回处理后的文档对象
  */
 const format = async (doc, imageClient) => {
+  doc.body = matterMarkdownAdapter(doc);
+  // 配置中无cover
+  if (!elogConfig.deploy.local.frontMatter.include.includes('cover')) {
+    return doc
+  }
+  // cover字段实际为空
+  if (!doc.properties.cover) {
+    return doc;
+  }
   const cover = doc.properties.cover
   // 将 cover 字段中的 notion 图片下载到本地
   if (imageClient)  {
@@ -16,7 +26,6 @@ const format = async (doc, imageClient) => {
     // cover链接替换为本地图片
     doc.properties.cover = url
   }
-  doc.body = matterMarkdownAdapter(doc);
   return doc;
 };
 
