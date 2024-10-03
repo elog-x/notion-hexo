@@ -27,6 +27,6 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^4.10.0"
+    "hexo-theme-butterfly": "^5.0.0"
   }
 }
